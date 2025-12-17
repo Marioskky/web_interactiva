@@ -6,6 +6,11 @@ Proyecto de **arte digital interactivo y experiencias web** desarrollado con **H
 
 **Futuro Interactivo** es una página web experimental que combina diseño web tradicional con animaciones generativas mediante **P5.js**. El objetivo es crear una experiencia inmersiva donde el usuario interactúa con un entorno visual dinámico.
 
+## 🌐 Visitar la página web
+
+[![Abrir Web Interactiva](https://img.shields.io/badge/Ver%20Proyecto-Web-blue?style=for-the-badge)](https://marioskky.github.io/web_interactiva/)
+
+
 Incluye:
 
 * Canvas animado con P5.js como fondo
@@ -60,3 +65,4 @@ Este proyecto es de uso educativo y demostrativo. Puedes modificarlo y adaptarlo
 ---
 
 🎨 *Explora el mañana a través del código y el arte digital.*
+
