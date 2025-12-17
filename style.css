@@ -1,0 +1,138 @@
+/* Reset básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna y elegante */
+    background: linear-gradient(135deg, #0b0c1b, #1a1a2e); /* Fondo degradado */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal que engloba canvas y contenido */
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden; /* Oculta cualquier desbordamiento del canvas */
+}
+
+/* Canvas de P5.js situado detrás del contenido */
+#p5Canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Canvas detrás de todo */
+}
+
+/* Contenido flotante sobre el canvas */
+.content {
+    position: relative;
+    z-index: 2; /* Se asegura que esté encima del canvas */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Header con título y subtítulo */
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #00ffff; /* Color neón para modernidad */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00bfff;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #cfd8dc; /* Color suave para subtítulo */
+}
+
+/* Menú de navegación elegante */
+nav {
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Efecto línea neón al pasar el mouse */
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #00ffff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+/* Formulario moderno y elegante */
+.form-container {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.7); /* Fondo semitransparente */
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ffff50, 0 0 50px #00ffff20; /* Sombras de neón */
+}
+
+form input {
+    display: block;
+    width: 320px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1a1a2e;
+    color: #fff;
+    font-size: 1em;
+}
+
+form input::placeholder {
+    color: #888;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00ffff, #00bfff);
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00bfff; /* Efecto neón */
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #00bfff;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: #888;
+}

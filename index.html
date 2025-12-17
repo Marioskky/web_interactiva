@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Interactivo - Mario Sahuco</title>
+    <!-- Se enlaza el CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Se carga la librería P5.js desde CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <!-- Se carga el script de animación con defer para que se ejecute después de cargar HTML -->
+    <script src="sketch.js" defer></script>
+</head>
+<body>
+    <!-- Contenedor principal de la web -->
+    <div class="container">
+        <!-- Div que contendrá el canvas de P5.js -->
+        <div id="p5Canvas"></div>
+
+        <!-- Contenido flotante sobre el canvas -->
+        <div class="content">
+            <!-- Header con título y descripción -->
+            <header>
+                <h1>Explora el Mañana</h1>
+                <p>Arte digital interactivo y experiencias web innovadoras.</p>
+            </header>
+
+            <!-- Menú de navegación -->
+            <nav>
+                <a href="#inicio">Home</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- Sección de suscripción / formulario -->
+            <section id="suscripcion">
+                <div class="form-container">
+                    <h2>Únete a nuestra comunidad</h2>
+                    <form>
+                        <input type="email" placeholder="correo@ejemplo.com" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer de la web -->
+            <footer>
+                <p>© 2025 Futuro Interactivo - Mario Sahuco</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
